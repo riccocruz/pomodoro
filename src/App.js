@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import SessionTimer from './components/SessionTimer';
 import Reset from './components/Reset';
+import Pause from "./components/Pause";
 
 function App(props) {
     const [session, setSession] = useState(props.session);
@@ -11,12 +12,10 @@ function App(props) {
 
     useEffect(() => {
         let interval = null;
-        if (isActive) {
+        if (isActive && session !== 0) {
             interval = setInterval(() => {
                 setSession(session => session - 1);
             }, 1000);
-        } else if (!isActive && session !== 0) {
-            clearInterval(interval);
         }
 
         return () => clearInterval(interval);
@@ -52,7 +51,10 @@ function App(props) {
             <br/>
 
             <div id={"start_stop"}>
-                <button>pause/resume</button>
+                <Pause
+                    isActive = {isActive}
+                    setIsActive = {setIsActive}
+                />
             </div>
             <div id={"reset"}>
                 <Reset
