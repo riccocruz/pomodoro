@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div id={"break-label"}>Break</div>
+            <div id={"break-decrement"}>Up</div>
+            <div id={"break-increment"}>Down</div>
+            <div id={"break-length"}>5</div>
+            <br/>
+
+            <div id={"session-label"}>Session</div>
+            <div id={"session-decrement"}>Up</div>
+            <div id={"session-increment"}>Down</div>
+            <div id={"session-length"}>25</div>
+            <br/>
+
+            <div id={"timer-label"}>Session</div>
+            <div id={"time-left"}>25:00</div>
+            <br/>
+
+                <div id={"start_stop"}><button>pause/resume</button></div>
+                <div id={"reset"}><button>reset button</button></div>
+
+
+        </div>
+    );
 }
 
 export default App;
