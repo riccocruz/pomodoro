@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SessionTimer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597360956311</updated>
-      <workItem from="1597360957625" duration="2293000" />
+      <workItem from="1597360957625" duration="6267000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1597361182951</created>
@@ -68,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597361182951</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create initial layout">
+      <created>1597370812785</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597370812785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,13 +81,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Create initial layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create initial layout" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597370753563">
+    <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597371170633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370753563" />
+    <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597371170633" />
+    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597374873515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597374873515" />
     <state width="1204" height="279" key="GridCell.Tab.0.bottom" timestamp="1597370738575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

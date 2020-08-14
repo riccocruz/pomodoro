@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+let INITIAL_SESSION = 25;
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App session={INITIAL_SESSION * 60}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

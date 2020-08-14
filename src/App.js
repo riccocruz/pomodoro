@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import SessionTimer from './components/SessionTimer';
 
-function App() {
+function App(props) {
+
     return (
         <div className="App">
             <div id={"break-label"}>Break</div>
@@ -17,11 +19,15 @@ function App() {
             <br/>
 
             <div id={"timer-label"}>Session</div>
-            <div id={"time-left"}>25:00</div>
+            <div id={"time-left"}><SessionTimer session={props.session}/></div>
             <br/>
 
-                <div id={"start_stop"}><button>pause/resume</button></div>
-                <div id={"reset"}><button>reset button</button></div>
+            <div id={"start_stop"}>
+                <button>pause/resume</button>
+            </div>
+            <div id={"reset"}>
+                <button>reset button</button>
+            </div>
 
 
         </div>
