@@ -5,13 +5,23 @@ import Reset from './components/Reset';
 
 function App(props) {
     const [session, setSession] = useState(props.session);
+    const [isActive, setIsActive] = useState(true);
+
     let timeInSession = calculateTime();
 
     useEffect(() => {
-        setInterval(() => {
-            setSession(session => session - 1);
-        }, 1000);
-    }, []);
+        let interval = null;
+        if (isActive) {
+            interval = setInterval(() => {
+                setSession(session => session - 1);
+            }, 1000);
+        } else if (!isActive && session !== 0) {
+            clearInterval(interval);
+        }
+
+        return () => clearInterval(interval);
+
+    }, [isActive, session]);
 
     function calculateTime() {
         let minutes = Math.floor(session / 60);
@@ -48,6 +58,7 @@ function App(props) {
                 <Reset
                     session={props.session}
                     setSession = {setSession}
+                    setIsActive = {setIsActive}
                 />
             </div>
 

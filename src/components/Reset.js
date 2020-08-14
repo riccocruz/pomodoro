@@ -5,7 +5,10 @@ function Reset(props) {
     return (
         <button
             type={"button"}
-            onClick={() => { props.setSession(props.session); console.log("wtfff", props.session)}}
+            onClick={() => {
+                props.setSession(props.session);
+                props.setIsActive(false);
+            }}
         >Reset</button>
     )
 }

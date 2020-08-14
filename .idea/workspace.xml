@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Reset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SessionTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SessionTimer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reset.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597360956311</updated>
       <workItem from="1597360957625" duration="6502000" />
-      <workItem from="1597429804732" duration="3860000" />
+      <workItem from="1597429804732" duration="5392000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1597361182951</created>
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597374891680</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create Session Reset">
+      <created>1597433834473</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597433834473</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,17 +105,18 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Create initial layout" />
     <MESSAGE value="Create Session Timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Session Timer" />
+    <MESSAGE value="Create Session Reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Session Reset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597371170633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597371170633" />
-    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597433807410">
+    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597433833941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597433807410" />
+    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597433833941" />
     <state width="1204" height="279" key="GridCell.Tab.0.bottom" timestamp="1597370738575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
