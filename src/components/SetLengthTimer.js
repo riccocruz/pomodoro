@@ -1,8 +1,7 @@
 import React from "react";
 
 function SetLengthTimer(props) {
-    // const [lengthTimer, setLengthTimer] = useState(props.session / 60);
-
+    // TODO: make sure it can't increment over 60 and decrement below 1
     const changeLengthTimer = (
         <div>
             <div id={"session-increment"}>
@@ -30,7 +29,7 @@ function SetLengthTimer(props) {
 
     return (
         <div>
-            <div id={"session-label"}>Session Length</div>
+            <div id={"session-label"}>{props.name}</div>
             {props.isActive ? <br/>: changeLengthTimer}
             <div id={"session-length"}>{props.lengthTimer}</div>
         </div>

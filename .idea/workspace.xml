@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="Have session length match with session on reset">
-      <change afterPath="$PROJECT_DIR$/src/components/SetLengthTimer.js" afterDir="false" />
+    <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pause.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pause.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SetLengthTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SetLengthTimer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597360956311</updated>
       <workItem from="1597360957625" duration="6502000" />
-      <workItem from="1597429804732" duration="15499000" />
+      <workItem from="1597429804732" duration="17689000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1597361182951</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597436231253</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Have session length match with session on reset">
+      <created>1597463086917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597463086917</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,10 +139,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597371170633" />
-    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597463055185">
+    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597463086445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597463055185" />
+    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597463086445" />
     <state width="1204" height="279" key="GridCell.Tab.0.bottom" timestamp="1597370738575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -153,5 +159,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1204" height="279" key="GridCell.Tab.0.right/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370738574" />
+    <state x="394" y="255" width="607" height="536" key="find.popup" timestamp="1597465105684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="394" y="255" width="607" height="536" key="find.popup/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597465105684" />
   </component>
 </project>
