@@ -1,7 +1,7 @@
 import React from "react";
 
 function Pause(props) {
-    const pauseButton = props.isActive ? "Pause" : "Resume";
+    const pauseButton = props.isActive ? "Pause" : "Start";
     return (
         <button
             type={"button"}

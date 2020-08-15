@@ -6,7 +6,7 @@ function Reset(props) {
         <button
             type={"button"}
             onClick={() => {
-                props.setSession(props.session);
+                props.setSession(props.lengthTimer * 60);
                 props.setIsActive(false);
             }}
         >Reset</button>

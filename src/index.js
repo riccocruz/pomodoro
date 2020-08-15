@@ -7,8 +7,9 @@ import * as serviceWorker from './serviceWorker';
 let INITIAL_SESSION = 25;
 ReactDOM.render(
     <React.StrictMode>
-        {/*<App session={INITIAL_SESSION * 60}/>*/}
-        <App session={5}/>
+        <App initialSession={INITIAL_SESSION * 60}/>
+
+        {/*<App session={5}/>*/}
 
     </React.StrictMode>,
     document.getElementById('root')
