@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="">
+    <list default="true" id="320f8aa6-1312-4523-89e1-f116dca0b583" name="Default Changelist" comment="Display break or session timer depending on what is currently occurring">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ricco.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SessionTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SessionTimer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SetLengthTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SetLengthTimer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -67,7 +72,18 @@
       <option name="presentableId" value="Default" />
       <updated>1597360956311</updated>
       <workItem from="1597360957625" duration="6502000" />
-      <workItem from="1597429804732" duration="17689000" />
+      <workItem from="1597429804732" duration="18512000" />
+      <workItem from="1597563830939" duration="709000" />
+      <workItem from="1597709383344" duration="2424000" />
+      <workItem from="1597711860442" duration="601000" />
+      <workItem from="1597722144674" duration="6907000" />
+      <workItem from="1597903133921" duration="5701000" />
+      <workItem from="1599973022260" duration="5894000" />
+      <workItem from="1600847826953" duration="12474000" />
+      <workItem from="1601870207037" duration="639000" />
+      <workItem from="1602095956254" duration="476000" />
+      <workItem from="1603951738527" duration="302000" />
+      <workItem from="1604019737142" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1597361182951</created>
@@ -118,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597463086917</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Switch off between session and break when session is finished">
+      <created>1597465498328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597465498328</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,36 +155,56 @@
     <MESSAGE value="Ensure Reset Button pauses on click" />
     <MESSAGE value="Create Pause Button" />
     <MESSAGE value="Have session length match with session on reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have session length match with session on reset" />
+    <MESSAGE value="Switch off between session and break when session is finished" />
+    <MESSAGE value="Display break or session timer depending on what is currently occuring" />
+    <MESSAGE value="Display break or session timer depending on what is currently occurring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display break or session timer depending on what is currently occurring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597371170633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="392" y="326" key="#com.intellij.fileTypes.FileTypeChooser/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597371170633" />
-    <state x="208" y="117" key="CommitChangelistDialog2" timestamp="1597463086445">
+    <state x="208" y="16" width="885" height="604" key="CommitChangelistDialog2" timestamp="1604019856324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597463086445" />
-    <state width="1204" height="279" key="GridCell.Tab.0.bottom" timestamp="1597370738575">
+    <state x="208" y="16" key="CommitChangelistDialog2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604019856324" />
+    <state x="166" y="13" width="885" height="604" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1597712062852" />
+    <state x="208" y="117" key="CommitChangelistDialog2/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597465497845" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600989998941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="279" key="GridCell.Tab.0.bottom/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370738575" />
-    <state width="1204" height="279" key="GridCell.Tab.0.center" timestamp="1597370738574">
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600989998941" />
+    <state x="740" y="275" key="FileChooserDialogImpl/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600130120348" />
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1601107065090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="279" key="GridCell.Tab.0.center/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370738574" />
-    <state width="1204" height="279" key="GridCell.Tab.0.left" timestamp="1597370738574">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601107065090" />
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597965772744" />
+    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1601107065090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="279" key="GridCell.Tab.0.left/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370738574" />
-    <state width="1204" height="279" key="GridCell.Tab.0.right" timestamp="1597370738574">
+    <state width="1899" height="279" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601107065090" />
+    <state width="1899" height="279" key="GridCell.Tab.0.center/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597965772744" />
+    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1601107065090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="279" key="GridCell.Tab.0.right/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597370738574" />
-    <state x="394" y="255" width="607" height="536" key="find.popup" timestamp="1597465105684">
+    <state width="1899" height="279" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601107065090" />
+    <state width="1899" height="279" key="GridCell.Tab.0.left/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597965772744" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1601107065090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="394" y="255" width="607" height="536" key="find.popup/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597465105684" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1601107065090" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597965772744" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597712149763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1597712149763" />
+    <state x="394" y="255" width="607" height="536" key="find.popup" timestamp="1602096130010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="394" y="255" width="607" height="536" key="find.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602096130010" />
+    <state x="315" y="202" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597726094483" />
+    <state x="394" y="255" width="607" height="536" key="find.popup/1920.-8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1597904785483" />
   </component>
 </project>

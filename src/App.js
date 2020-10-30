@@ -5,7 +5,7 @@ import Reset from './components/Reset';
 import Pause from "./components/Pause";
 import SetLengthTimer from "./components/SetLengthTimer";
 
-function App(props) {
+function Pomodoro(props) {
     const [session, setSession] = useState(props.initialSession);
     const [lengthTimer, setLengthTimer] = useState(session / 60);
 
@@ -15,7 +15,9 @@ function App(props) {
     const [isActive, setIsActive] = useState(false);
     const [isSession, setIsSession] = useState(true);
 
-    let timeInSession = calculateTime();
+    let timeInSession = calculateTime(session);
+    let timeInBreak = calculateTime(breakTime);
+
     useEffect(() => {
         let interval = null;
         if (isSession) {
@@ -29,14 +31,13 @@ function App(props) {
                 setIsSession(false);
             }
         } else {
-            console.log(isActive, breakTime, isSession);
             if (isActive && breakTime > 0) {
                 interval = setInterval(() => {
                     setBreakTime(breakTime => breakTime - 1);
                 }, 1000);
             }
 
-            if (breakTime < 0) {
+            if (breakTime <= 0) {
                 setBreakTime(0);
                 setIsSession(true);
             }
@@ -45,66 +46,63 @@ function App(props) {
 
     }, [breakTime, session, isSession, isActive]);
 
-    function calculateTime() {
-        let minutes = Math.floor(session / 60);
-        let seconds = (session % 60);
+    function calculateTime(t) {
+        let minutes = Math.floor(t / 60);
+        let seconds = (t % 60);
         return minutes.toString() + ':' + seconds.toString().padStart(2, "0");
     }
 
     return (
         <div className="App">
-            {/*<div id={"break-label"}>Break</div>*/}
-            {/*<div id={"break-decrement"}>Up</div>*/}
-            {/*<div id={"break-increment"}>Down</div>*/}
-            {/*<div id={"break-length"}>5</div>*/}
-            {/*<br/>*/}
+            <h1>Pomodoro</h1>
+            <div>
+                <SetLengthTimer
+                    name={"Break Length"}
+                    session={breakTime}
+                    setSession={setBreakTime}
+                    isActive={isActive}
+                    lengthTimer={breakLengthTimer}
+                    setLengthTimer={setBreakLengthTimer}
+                />
 
-            <SetLengthTimer
-                name={"Break Length"}
-                session={breakTime}
-                setSession={setBreakTime}
-                isActive={isActive}
-                lengthTimer={breakLengthTimer}
-                setLengthTimer={setBreakLengthTimer}
-            />
-
-            <SetLengthTimer
-                name={"Session Length"}
-                session={session}
-                setSession={setSession}
-                isActive={isActive}
-                lengthTimer={lengthTimer}
-                setLengthTimer={setLengthTimer}
-            />
-
-            <div id={"timer-label"}>Session</div>
-            <div id={"time-left"}>
+                <SetLengthTimer
+                    name={"Session Length"}
+                    session={session}
+                    setSession={setSession}
+                    isActive={isActive}
+                    lengthTimer={lengthTimer}
+                    setLengthTimer={setLengthTimer}
+                />
+            </div>
+            <div className={isActive ? "session-start card" : "session-stop card"}>
                 <SessionTimer
                     session={timeInSession}
+                    breakTime={timeInBreak}
+                    isSession={isSession}
                 />
-            </div>
-            <br/>
+                <div className={"session-buttons"}>
+                    <div id={"start_stop"}>
+                        <Pause
+                            isActive={isActive}
+                            setIsActive={setIsActive}
+                        />
+                    </div>
 
-            <div id={"start_stop"}>
-                <Pause
-                    isActive = {isActive}
-                    setIsActive = {setIsActive}
-                />
+                    <div id={"reset"}>
+                        <Reset
+                            session={session}
+                            breakLengthTimer={breakLengthTimer}
+                            lengthTimer={lengthTimer}
+                            setSession={setSession}
+                            setIsActive={setIsActive}
+                            setBreakTime={setBreakTime}
+                        />
+                    </div>
+                </div>
             </div>
-            <div id={"reset"}>
-                <Reset
-                    session={session}
-                    breakLengthTimer={breakLengthTimer}
-                    lengthTimer={lengthTimer}
-                    setSession={setSession}
-                    setIsActive={setIsActive}
-                    setBreakTime={setBreakTime}
-                />
-            </div>
-
 
         </div>
     );
 }
 
-export default App;
+export default Pomodoro;

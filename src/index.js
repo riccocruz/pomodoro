@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Pomodoro from './App';
 import * as serviceWorker from './serviceWorker';
 
 let INITIAL_SESSION = 25;
 let INITIAL_BREAKTIME = 5;
 ReactDOM.render(
     <React.StrictMode>
-        {/*<App initialSession={INITIAL_SESSION * 60} initialBreak={INITIAL_BREAKTIME * 60}/>*/}
-        <App initialSession={5} initialBreak={INITIAL_BREAKTIME * 60}/>
-
-
+        <Pomodoro initialSession={INITIAL_SESSION * 60} initialBreak={INITIAL_BREAKTIME * 60}/>
     </React.StrictMode>,
     document.getElementById('root')
 );
